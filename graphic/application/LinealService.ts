@@ -5,7 +5,7 @@ import { DB_Repository } from "../domain/repositories/DB_Repository";
 export class LinealService {
     constructor(private db: DB_Repository) {}
 
-    async execute(id: string): Promise<Lineal[]> {
+    async execute(id: number): Promise<Lineal[]> {
         try {
             let results = [];
 

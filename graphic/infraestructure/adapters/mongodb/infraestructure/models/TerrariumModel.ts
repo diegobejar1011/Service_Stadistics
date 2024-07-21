@@ -2,7 +2,7 @@ import { Schema, model} from "mongoose";
 
 
 const TerrariumSchema = new Schema({
-    id: String,
+    id: Number,
     date: String,
     temperature: {
       t_max: Number,

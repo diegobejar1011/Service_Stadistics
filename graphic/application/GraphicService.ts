@@ -7,7 +7,7 @@ export class GraphicService {
         private readonly barsService: BarsService,
     ) {}
     
-    async execute(id: string): Promise<Graphic> {
+    async execute(id: number): Promise<Graphic> {
         try {
 
             const lineal = await this.linealService.execute(id)

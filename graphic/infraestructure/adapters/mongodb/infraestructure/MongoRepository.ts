@@ -3,7 +3,7 @@ import TerrariumModel from "./models/TerrariumModel";
 import { Format } from "../../../../domain/entities";
 
 export class MongoRepository implements DB_Repository {
-    async getData(id: string, date: Date): Promise<Format[]> {
+    async getData(id: number, date: Date): Promise<Format[]> {
         try {
 
             const data: Format[] = await TerrariumModel.find({

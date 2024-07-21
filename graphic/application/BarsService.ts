@@ -5,7 +5,7 @@ import { DB_Repository } from "../domain/repositories/DB_Repository";
 export class BarsService {
     constructor(private readonly db: DB_Repository) {}
 
-    async execute(id: string): Promise<Bars[]> {
+    async execute(id: number): Promise<Bars[]> {
         try {
             const today = new Date();
 

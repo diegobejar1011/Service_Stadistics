@@ -1,5 +1,5 @@
 export interface Format {
-    id: string;
+    id: number;
     date: string;
     temperature: {
         t_max: number;
