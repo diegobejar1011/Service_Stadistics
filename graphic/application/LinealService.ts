@@ -30,7 +30,7 @@ export class LinealService {
 
                 // Obtenemos los procentajes
                 const temperaturePercentage = getPercentage(temperature.t_max, temperature.t_min, avgTemperature);
-                const humidityPercentage = getPercentage(humidity.h_max, humidity.h_max, avgHumidity);
+                const humidityPercentage = getPercentage(humidity.h_max, humidity.h_min, avgHumidity);
                 const uvPercentage = getPercentage(uv.uv_max, uv.uv_min, avgUV);
 
                 // Agregamos el objeto al array
