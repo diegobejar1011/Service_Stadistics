@@ -9,12 +9,9 @@ export const getOne = (documents: Format[], today: Date) => {
         
         const currentDate = new Date(documents[i].date);
 
-        
-        if (currentDate > today) {
-            if (closeDate === null || currentDate < closeDate) {
-                closeDate = currentDate;
-                closeDoc = documents[i];
-            }
+        if (closeDate === null || currentDate < closeDate) {
+            closeDate = currentDate;
+            closeDoc = documents[i];
         }
     }
 
